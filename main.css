@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    height: 100%;
+    width: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+/* Gets rid of blue outline when clicking button */
+button:focus {outline:0;}
+
+#navbar {
+    height: 6rem;;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    opacity: 0.75;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    /*
+        min-height is needed in order to have image expand the entire page,
+        otherwise your image will only fill up a portion of the page bc the 
+        other divs are preventing the image from spanning the entire page.
+    */
+    min-height: 100vh;
+    background-image: url('./random_background_image.jpg');
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+}
+
+.membership-card {
+    /*
+        Using rgb() is better since the opacity attribute
+        will also give an opacity to your text (undesired effect)
+    */
+    background-color: rgb(0, 0, 0, 0.75);
+    /* opacity: 0.75; */
+    height: 60%;
+    width: 80%;
+    border-radius: 8px;
+    
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: start;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#membership-card-header {
+    height: 3rem;
+    font-size: 3.5rem;
+    margin-bottom: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+#membership-card-sub {
+    font-size: 2rem;
+    align-self: flex-start;
+    color: rgb(168, 168, 168, .6);
+}
+
+.card-navigation {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.join {
+    background-color: #9B7412;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 4.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+
+    margin-top: .3rem;
+}
+
+#instagram {
+    grid-column: 2/3;
+    height: 55%;
+    width: 55%;
+    justify-self: end;
+    margin-top: .3rem;
+}
+
+
+#facebook {
+    grid-column: 3/4;
+    height: 55%;
+    width: 55%;
+    justify-self: center;
+    margin-left: 1rem;
+    margin-top: .3rem;
+}
+
+#discord {
+    grid-column: 4/5;
+    height: 70%;
+    width: 70%;
+    justify-self: center;
+}
+
+
+
