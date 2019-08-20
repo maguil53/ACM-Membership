@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin:0;
-    height: 100%;
     width: 100%;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
@@ -100,7 +99,6 @@ button:focus {outline:0;}
     margin-top: .3rem;
 }
 
-
 #facebook {
     grid-column: 3/4;
     height: 55%;
@@ -118,4 +116,78 @@ button:focus {outline:0;}
 }
 
 
+/* Section about incentives */
+.incentives {
+    min-height: 100vh;
+    background-color: black;
+
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns:0.5fr 4fr 4fr 0.5fr;
+}
+
+.incentives-left {
+    color: white;
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.incentives-left p {
+    font-size: 4.3rem;
+}
+
+.incentives-left p::after {
+    content: "";
+    display: block;
+    bottom: 0;
+    width: 85%;
+    border: .5px solid #A8A8A8;
+    opacity: .5;
+}
+
+.incentives-left ul {
+    list-style: none;
+    font-size: 1.4rem;
+    
+}
+
+.incentives-left li {
+    color: #9B7412;
+    background-color:rgb(82, 82, 82, .3);
+    border: 1px solid #707070;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-left: -8%;
+    margin-top:2%;
+}
+
+.incentives-right {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+
+.vertical-line {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    align-self: end;
+    width: 1px;
+    height: 50%;
+    background-color: rgb(168, 168, 168,.6);
+}
+
+.horizontal-line {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    justify-self: end;
+    margin-right: -1px;
+
+    height: 1px;
+    width: 50%;
+    background-color: rgb(168, 168, 168,.6);
+}
 
