@@ -10,10 +10,24 @@
 </head>
 
 <body>
-    <header id="navbar">
-        <nav>
+    <header>
 
-        </nav>
+        <div class="header-container">
+
+            <div class="nav-logo">
+                <img src="ACM_Logo_1.png" alt="ACM Logo 1">
+            </div>
+
+            <nav class="navigation-links">
+                <ul>
+                    <li id="home" id="home"><a href="#">Home</a></li>
+                    <li><a href="#" id="about">About</a></li>
+                    <li><a href="#" id="projects">Projects</a></li>
+                    <li><a href="#" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
     <div class="container">
@@ -58,7 +72,21 @@
         </div>
 
         <div class="why-join">
-            <div class="transparent-screen"></div>
+            <!--
+                transparent-screen is used to put the black transparent div 
+                over our image. We're also going to make this into a grid
+                and put all of our content on it.
+            -->
+            <div class="transparent-screen">
+                <div class="why-join-main">
+                    <p class="why-join-header">Why Should I Join?</p>
+                    <p class="why-join-sub">
+                        ACM holds many workshops that help prepare young
+                        engineers for their careers.
+                    </p>
+                </div>
+            </div>
+
         </div>
 
     </div>
