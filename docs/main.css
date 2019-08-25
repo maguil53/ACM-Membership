@@ -296,3 +296,91 @@ header {
 }
 
 
+/* How to join section */
+.how-to-join {
+    background-color: #2E2E2E;
+    min-height: 100vh;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+}
+
+.how-header{
+    font-size: 4.3rem;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.how-sub {
+    font-size: 1.5rem;
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+
+.membership-header {
+    text-align: center;
+    font-size: 4.3rem;
+    grid-column: 2/4;
+    grid-row:4/5;
+}
+
+
+.membership-tiers {
+    min-height: 100vh;
+    background-color: #2E2E2E;
+
+    display: grid;
+    grid-template-rows: 0.5fr 7.8fr 3fr 0.5fr;
+    grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+}
+
+.tier {
+    height: 100%;
+    width: 70%;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    justify-self: center;
+    box-shadow: 4px 4px 6px #000000;
+}
+
+.gold {
+    background-color: #AF8316;
+    grid-row: 2/3;
+    grid-column: 3/4;
+    
+}
+
+.basic {
+    background-color: #1D1D1D;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.paypal-button {
+    width: 30%;
+    height: auto;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: end;
+}
+
+.paypal-button button {
+    height: 4rem;
+    width: 100%;
+    background-color: #FFC400;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.paypal-button button:active {
+    background-color: #F4BB00;
+}
+
+.paypal-button img{
+    margin-top: -13%;
+    width: 70%;
+    height: auto%;
+}
