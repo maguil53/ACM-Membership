@@ -21,7 +21,7 @@ header {
     display: grid;
     height: 100%;
     grid-template-rows: 1fr;
-    grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+    grid-template-columns: 0.5fr 4fr 4fr 1fr;
 }
 
 .nav-logo {
@@ -52,10 +52,21 @@ header {
     display: inline;
 }
 
+#home {
+    /* "About" contains less words so the spacing of 
+    the items in the navbar seem off. */
+    width: 80%;
+}
+
 .navigation-links a {
     color: #fff;
     font-size: 1.6rem;
     text-decoration: none;
+}
+
+.navigation-links a:hover {
+    color: #AF8316;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .container {
@@ -121,7 +132,7 @@ header {
 }
 
 .join {
-    background-color: #9B7412;
+    background-color: #AF8316;
     border: 1px solid black;
     border-radius: 5px;
     height: 2.5rem;
@@ -130,6 +141,16 @@ header {
     font-weight: bold;
 
     margin-top: .3rem;
+}
+
+.join:hover {
+    background-color: #9B7412;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.join:active {
+    background-color: #AF8316;
+    
 }
 
 #instagram {
