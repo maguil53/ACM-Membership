@@ -37,7 +37,7 @@
                 <p id="membership-card-header">Membership</p>
                 <p id="membership-card-sub">Become a member!</p>
                 <div class="card-navigation">
-                    <button class="join">Join</button>
+                    <button class="join" id="join-button">Join</button>
                     <a href="https://www.instagram.com/calstatela_acm/?hl=en" id="instagram">
                         <img src="./instragram_logo.png" alt="ACM Instagram" />
                     </a>
@@ -95,15 +95,26 @@
 
         <div class="how-to-join">
             <p class="how-header">How Do I Join?</p>
-            <p class="how-sub"> The club holds many events throughout the semester. However, one
-                of most important experiences is being involved with the workshops.
-                To get the most benefits off being a member of the club - make sure
-                to meet deadlines. Be aware that workshop space is very limited,
-                so don’t miss the first meeting of each semester
-                (check the calendar for more details).
+            <p class="how-sub"> Below you will find information on the two type of memberships
+                we offer. Once you’re finished making the payment, please fill out
+                the Google Form with your information by clicking the Registration
+                Form button. At the very bottom, you will be asked to provide a proof
+                of payment. Please attach the screenshot of either your cash receipt
+                (from the treasurer) or the paypal screenshot.
             </p>
 
+
+            <a class="how-button"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform">
+                <div class="how-button-text">Registration Form</div>
+            </a>
+
+
+
             <p class="membership-header">Membership</p>
+            <!-- Using this as a reference so when using clicks "join", the
+            web page will scroll down to the Membership tiers -->
+            <div class="tiers-point"></div>
         </div>
 
         <div class="membership-tiers">
@@ -137,7 +148,18 @@
             </div>
         </div>
 
+        <!-- <div class="what-next">
+            <p class="what-next-header">What's Next?</p>
+            <p class="what-next-sub">Once you're finished making the payment, please fill out the Google Form with your
+                information. In the
+                very bottom, you will be asked to provide a proof of payment. Please attach the
+                screenshot of either your cash receipt (from the treasurer) or the paypal screenshot.</p>
+
+            <button class="registration">Registration Form</button>
+        </div> -->
+
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

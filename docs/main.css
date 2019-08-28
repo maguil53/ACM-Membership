@@ -273,7 +273,7 @@ header {
 }
 
 .why-join-main {
-    color: #7E7E7E;
+    color: rgb(142, 142, 142);
     grid-column: 2/4;
     grid-row: 2/3;
 
@@ -303,7 +303,7 @@ header {
     color: white;
 
     display: grid;
-    grid-template-columns: 0.5fr 4fr 4fr 0.5fr;
+    grid-template-columns: 0.5fr 6fr 4fr 0.5fr;
     grid-template-rows: 1fr 1fr 3fr 1fr;
 }
 
@@ -311,21 +311,61 @@ header {
     font-size: 4.3rem;
     grid-row: 2/3;
     grid-column: 2/3;
+    
+
 }
 
 .how-sub {
     font-size: 1.5rem;
     grid-row: 3/4;
-    grid-column: 2/4;
+    grid-column: 2/3;
+    margin-top: 1rem;
+}
+
+.how-button {
+    height: 25%;
+    width: 50%;
+
+    border: 1px solid #A09A9A;
+    box-shadow: 4px 4px 6px #000000;
+    border-radius: 5px;
+    background-color: #2E2E2E;
+    color: white;
+    text-decoration: none;  
+    text-align: center;
+    font-size: 1.5rem;
+    
+    grid-row: 3/4;
+    grid-column: 3/4;
+    justify-self: center;
+    margin-top: 1.3rem;  
+    margin-left: 10%;
+    
+}
+
+/* For some reason I couldn't center the text "Registration Form" vertically
+so I had to resort to using CSS Grid */
+.how-button-text {
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+
+.how-button:hover {
+    background-color: black;
+    transition: color .15s ease-in-out,background-color .20s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.how-button:active {
+    background-color: rgb(43, 43, 43);
 }
 
 .membership-header {
     text-align: center;
     font-size: 4.3rem;
     grid-column: 2/4;
-    grid-row:3/5;
-    margin-top: 15%;
-    align-self: center;
+    grid-row: 4/5;
+    
 }
 
 
@@ -339,12 +379,13 @@ header {
 }
 
 .tier {
+    margin-top: 2rem;
     height: 100%;
     width: 70%;
     border: 1px solid #707070;
     border-radius: 10px;
     justify-self: center;
-    box-shadow: 4px 4px 6px #000000;
+    box-shadow: 8px 8px 6px #000000;
 
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;
@@ -412,7 +453,7 @@ header {
     width: 30%;
     height: auto;
     grid-column: 2/4;
-    grid-row: 3/4;
+    grid-row: 3/5;
     justify-self: center;
     align-self: end;
 }
@@ -438,4 +479,42 @@ header {
 
 .check {
     color: white;
+}
+
+/* What's Next section */
+
+.what-next {
+    
+    background: rgb(46,46,46);
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(41,41,41,1) 13%, rgba(24,24,24,1) 100%);    
+
+    min-height: 70vh;
+}
+
+.what-next-header {
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+.what-next-sub {
+    margin-top: 2rem;
+    text-align: left;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.registration {
+    font-size: 1.1rem;
+    color: white;
+    
+    background: rgb(124,124,124);
+background: linear-gradient(180deg, rgba(124,124,124,1) 0%, rgba(105,105,105,1) 23%, rgba(64,64,64,1) 100%);
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 3rem;
+    width: 8rem;
 }
